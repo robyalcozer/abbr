@@ -400,7 +400,7 @@ input:checked+.slider:before {
     .searchbar button {
         position: relative;
         top: .02em;
-        height: 2.8em !important;
+        height: 2.7em !important;
     }
 
     .searchbar input {
