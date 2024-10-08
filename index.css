@@ -54,16 +54,12 @@ header h1 {
     font-size: 2.5vw;
     margin: 0;
     font-weight: 600;
-
-
 }
 
 header h2 {
     font-size: 2.1vw;
     margin: 0;
     font-weight: 500;
-
-
 }
 
 ul i {
@@ -177,10 +173,10 @@ ul li:hover i {
     line-height: 28px;
     align-items: center;
     position: relative;
-    max-width: 55vw;
+    max-width: 60vw;
     z-index: 2;
     justify-content: center;
-    left: 30vw;
+    left: 28vw;
 }
 
 .input {
@@ -512,6 +508,7 @@ input:checked+.slider:before {
         align-items: center;
         flex-direction: column;
         margin-left: 20%;
+        padding: 20px 0;
     }
 
     .grid-item img {
@@ -523,8 +520,12 @@ input:checked+.slider:before {
     }
 
     .group {
-        left: 25vw;
+        left: 20vw;
         z-index: 2;
+    }
+
+    .group input {
+        height: 35px;
     }
 
 }
