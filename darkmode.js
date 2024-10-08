@@ -1,3 +1,13 @@
+function toggleNav() {
+    const sidenav = document.getElementById("mySidenav");
+    sidenav.classList.toggle("open");
+}
+
+function closeNav() {
+    const sidenav = document.getElementById("mySidenav");
+    sidenav.classList.remove("open");
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeSwitch = document.getElementById('darkModeSwitch');
     const body = document.body;
