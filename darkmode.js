@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     const main = document.querySelector('.main');
     const main2 = document.querySelector('.main2');
-    const searchbar = document.querySelector('.searchbar');
+    const group = document.querySelector('.group');
     
 
     function applyDarkMode(isDarkMode) {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.add('dark-mode');
             main.classList.add('dark-mode');
             main2.classList.add('dark-mode');
-            searchbar.classList.add('dark-mode');
+            group.classList.add('dark-mode');
             darkModeSwitch.checked = true;
         } else {
             body.classList.remove('dark-mode');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('dark-mode');
             main.classList.remove('dark-mode');
             main2.classList.remove('dark-mode');
-            searchbar.classList.remove('dark-mode');
+            group.classList.remove('dark-mode');
             darkModeSwitch.checked = false;
         }
     }
