@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-B: Business Directory</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/iLgU5rk.png">
     <link rel="stylesheet"
@@ -13,29 +13,32 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar">
+        <span class="hamburger" onclick="toggleNav()">&#9776;</span>
         <img src="https://i.imgur.com/iLgU5rk.png">
         <h1>A-BBR</h1>
         <h2>Home</h2>
     </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><i class="fi fi-rr-home"></i><a href="#">Home</a></li>
+            <li><i class="fi fi-rr-user"></i><a href="#">Profile</a></li>
+            <li><i class="fi fi-rr-bookmark"></i><a href="#">Bookmarks</a></li>
+            <li><i class="fi fi-rr-time-past"></i><a href="#">History</a></li>
+            <li><i class="fi fi-rr-settings"></i><a href="#">Settings</a></li>
+            <li>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeSwitch">
+                    <span class="slider round"></span>
+                </label>
+                <label for="darkModeSwitch">Dark Mode</label>
+            </li>
+        </ul>
+    </div>
 
-    <ul>
-        <li><i class="fi fi-rr-home"></i><a href="#">Home</a></li>
-        <li><i class="fi fi-rr-user"></i><a href="#">Profile</a></li>
-        <li><i class="fi fi-rr-bookmark"></i><a href="#">Bookmarks</a></li>
-        <li><i class="fi fi-rr-time-past"></i><a href="#">History</a></li>
-        <li><i class="fi fi-rr-settings"></i><a href="#">Settings</a></li>
-        <li>
-            <label class="switch">
-                <input type="checkbox" id="darkModeSwitch">
-                <span class="slider round"></span>
-            </label>
-            <label for="darkModeSwitch">Dark Mode</label>
-        </li>
-
-    </ul>
     <div class="main">
-        <img src="Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
+        <img src="img/Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
 
         <div class="fig">
             <figcaption>City Hall of City of Sto. Tomas</figcaption>
@@ -52,24 +55,25 @@
 
     <div class="main2">
         <div class="gridContainer">
-            <div class="grid-item"><img src="Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
+            <div class="grid-item"><img src="img/Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
                 <div class="overlay">Your Text Here</div>
             </div>
-            <div class="grid-item"><img src="Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
+            <div class="grid-item"><img src="img/Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
                 <div class="overlay">Your Text Here</div>
             </div>
 
-            <div class="grid-item"><img src="Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
+            <div class="grid-item"><img src="img/Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
                 <div class="overlay">Your Text Here</div>
             </div>
-            <div class="grid-item"><img src="Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
+            <div class="grid-item"><img src="img/Sto._Tomas_City_Hall,_Batangas,_Apr_2024.jpg">
                 <div class="overlay">Your Text Here</div>
             </div>
         </div>
-        
+
     </div>
 
-    <script src="darkmode.js"></script>
+    <script src="darkmode.js">
+    </script>
 </body>
 
 </html>
