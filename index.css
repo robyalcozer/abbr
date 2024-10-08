@@ -5,7 +5,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     font-family: "Roboto", sans-serif;
     background-color: #e6f4ff;
@@ -46,7 +46,7 @@ header h1 {
     font-size: 2.5vw;
     margin: 0;
     font-weight: 600;
-   
+
 
 }
 
@@ -54,7 +54,7 @@ header h2 {
     font-size: 2.1vw;
     margin: 0;
     font-weight: 500;
-    
+
 
 }
 
@@ -111,18 +111,18 @@ li a {
 
 ul li:hover {
     background-color: #3498db;
-    border-radius: 15px;       
-    padding: 12px;             
-    transition: all 0.2s ease; 
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.2s ease;
 }
 
 ul li:hover i,
 ul li:hover a {
-    color: white;             
+    color: white;
 }
 
 ul li:hover i {
-    transform: scale(1.3);    
+    transform: scale(1.3);
     transition: transform 0.4s ease;
 }
 
@@ -274,14 +274,14 @@ ul.dark-mode i {
 .switch {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 25px;
+    width: 2.2em;
+    height: 1.31em;
     margin-left: -10px;
 }
 
 li label {
     cursor: pointer;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
 }
 
 .switch input {
@@ -305,8 +305,8 @@ li label {
 .slider:before {
     position: absolute;
     content: "";
-    height: 25px;
-    width: 26px;
+    height: 1.2em;
+    width: 1.1em;
     left: -2px;
     bottom: 1px;
     background-color: rgb(114, 110, 110);
@@ -319,7 +319,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-    transform: translateX(26px);
+    transform: translateX(23px);
 }
 
 .slider.round {
@@ -360,8 +360,8 @@ input:checked+.slider:before {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
-    padding: 10px;
-    width: 84.7%;
+    padding: 3%;
+    width: 84.3%;
     opacity: 0;
     transition: opacity 0.5s ease;
     margin-bottom: 4px;
@@ -380,6 +380,20 @@ input:checked+.slider:before {
         display: none;
     }
 
+    header h1 {
+        font-size: 4vw;
+    }
+
+    header h2 {
+        font-size: 3.5vw;
+    }
+
+    .fig {
+        font-size: 4vw;
+        position: relative;
+        top: -1em;
+    }
+
     .main img {
         margin: 0;
         width: 100%;
@@ -387,10 +401,12 @@ input:checked+.slider:before {
 
     .main h1 {
         margin-left: 5% !important;
+        font-size: 4vw;
     }
 
     .main h2 {
         margin-left: 5% !important;
+        font-size: 3.8vw;
     }
 
     .searchbar {
@@ -400,7 +416,7 @@ input:checked+.slider:before {
     .searchbar button {
         position: relative;
         top: .02em;
-        height: 2.7em !important;
+        height: 3em !important;
     }
 
     .searchbar input {
@@ -420,7 +436,7 @@ input:checked+.slider:before {
     }
 
     .overlay {
-        width: 92%;
+        width: 94% !important;
     }
 
 }
@@ -445,4 +461,12 @@ input:checked+.slider:before {
         height: 2.95em;
     }
 
+    input:checked+.slider:before {
+        transform: translateX(1.2em);
+    }
+
+    .overlay {
+        width: 84.5%;
+    }
+    
 }
