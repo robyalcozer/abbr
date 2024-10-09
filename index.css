@@ -135,6 +135,7 @@ ul li:hover i {
     margin-top: 2.7%;
     border-radius: 10px;
     height: 55vw;
+    transition: .6s;
 }
 
 .slideshow-container {
