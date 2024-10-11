@@ -27,6 +27,7 @@ function showSlides(n) {
 
     slides[slideIndex - 1].style.display = "block";
 
+    
     thumbnails[slideIndex - 1].classList.add("active-thumbnail");
 }
 
@@ -53,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const main = document.querySelector('.main');
     const main2 = document.querySelector('.main2');
     const group = document.querySelector('.group');
+    const sidenav = document.querySelector('.sidenav');
+    
     
 
     function applyDarkMode(isDarkMode) {
@@ -63,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             main.classList.add('dark-mode');
             main2.classList.add('dark-mode');
             group.classList.add('dark-mode');
+            sidenav.classList.add('dark-mode');
             darkModeSwitch.checked = true;
         } else {
             body.classList.remove('dark-mode');
@@ -71,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             main.classList.remove('dark-mode');
             main2.classList.remove('dark-mode');
             group.classList.remove('dark-mode');
+            sidenav.classList.remove('dark-mode');
             darkModeSwitch.checked = false;
         }
     }
